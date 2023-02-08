@@ -1,0 +1,91 @@
+{
+  "name": "ai-nft-minter",
+  "private": true,
+  "description": "Gatsby Hardhat MUI starter",
+  "version": "0.1.0",
+  "engines": {
+    "node": "18.12.1"
+  },
+  "author": "Gerardo Ornelas <gerardo@ornelastechnologies.com>",
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/lab": "^5.0.0-alpha.110",
+    "@mui/material": "latest",
+    "@openzeppelin/contracts": "^4.8.1",
+    "@reduxjs/toolkit": "^1.9.2",
+    "axios": "^0.21.4",
+    "buffer": "^5.7.1",
+    "dotenv": "^8.6.0",
+    "gatsby": "latest",
+    "gatsby-plugin-image": "^3.2.0",
+    "gatsby-plugin-manifest": "^5.2.0",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-sharp": "^5.2.0",
+    "gatsby-source-filesystem": "^5.2.0",
+    "gatsby-transformer-remark": "^6.3.1",
+    "gatsby-transformer-sharp": "^5.2.0",
+    "hardhat": "^2.12.6",
+    "intersection-observer": "^0.12.2",
+    "nft.storage": "^7.0.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest",
+    "react-hook-form": "^7.41.0",
+    "react-intersection-observer": "^9.4.1",
+    "react-redux": "^8.0.5"
+  },
+  "devDependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.5",
+    "@testing-library/react": "^13.4.0",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/chai": "^4.3.4",
+    "@types/jest": "^29.4.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-helmet": "^6.1.6",
+    "chai": "^4.3.7",
+    "cuid": "^2.1.8",
+    "ethers": "^5.7.2",
+    "fs": "^0.0.1-security",
+    "hardhat-gas-reporter": "^1.0.9",
+    "lodash": "^4.17.21",
+    "polished": "^4.2.2",
+    "prettier": "^2.8.0",
+    "solidity-coverage": "^0.7.22",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "generate:component": "node ./utilities/generator/generate-component"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
