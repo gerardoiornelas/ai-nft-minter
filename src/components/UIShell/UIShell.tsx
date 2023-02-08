@@ -10,11 +10,13 @@ interface Props {
 
 const UIShell = ({ children }: Props) => {
   return (
-    <>
+    <Box sx={{ display: "flex", minHeight: "100vh", flexDirection: "column" }}>
       <UIShellHeader />
-      <Box component="main">{children}</Box>
+      <Box component="main" sx={{ display: "flex", flex: 1 }}>
+        {children}
+      </Box>
       <UIShellFooter />
-    </>
+    </Box>
   )
 }
 

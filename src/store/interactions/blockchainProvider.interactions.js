@@ -31,10 +31,10 @@ const loadAccount = async dispatch => {
   return account
 }
 
-const loadNft = (address, nftAbi, provider, dispatch) => {
+const loadNftContract = (address, nftAbi, provider, dispatch) => {
   const nft = new ethers.Contract(address, nftAbi, provider)
   dispatch(setNft(nft))
   return nft
 }
 
-export { loadProvider, loadAccount, loadNetwork, loadNft }
+export { loadProvider, loadAccount, loadNetwork, loadNftContract }

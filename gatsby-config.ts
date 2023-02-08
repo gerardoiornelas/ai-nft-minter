@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `AI NFT Minter by Gerardo I. Ornelas`,
+    title: `Giominter`,
     description: `Gatsby, Hardhat, and MUI template`,
     author: `@gerardoiornelas`,
     siteUrl: `https://www.gerardoiornelas.com/`,

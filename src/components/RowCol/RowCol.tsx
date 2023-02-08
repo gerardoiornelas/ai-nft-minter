@@ -6,7 +6,7 @@ interface Props {
   mb: number
 }
 
-const RowCol = ({ children, mb, ...otherProps }: Props) => {
+const RowCol = ({ children, mb = 0, ...otherProps }: Props) => {
   return (
     <>
       <Grid container {...otherProps}>
