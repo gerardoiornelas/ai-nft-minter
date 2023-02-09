@@ -52,7 +52,7 @@ const AiNftMinter = () => {
 
     //load nft
     await loadNftContract(
-      "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "0xEaF52F2c273b460db83320f9A8E4C6498Ccc7465",
       gioNftAbi,
       provider,
       dispatch
@@ -64,7 +64,6 @@ const AiNftMinter = () => {
 
     // Call AI API to generate a image based on description
     const imageData = await createImage()
-    console.log({ imageData })
 
     // Upload image to IPFS (NFT.Storage)
     const tokenUri = await uploadImage(imageData)
@@ -169,7 +168,7 @@ const AiNftMinter = () => {
   useEffect(() => {
     loadBlockchainData()
   }, [])
-  console.log({ formData })
+
   return (
     <UIShell>
       <Container>
