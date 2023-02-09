@@ -87,7 +87,7 @@ const AiNftMinter = () => {
       url: URL,
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.HUGGING_FACE_API_KEY}`,
+        Authorization: `Bearer ${process.env.GATSBY_HUGGING_FACE_API_KEY}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
