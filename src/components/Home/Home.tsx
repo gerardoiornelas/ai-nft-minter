@@ -112,9 +112,9 @@ const AiNftMinter = () => {
     setMessage("Uploading Image...")
     let nftstorage, ipnft
     // Create instance to NFT.Storage
-    if (!_.isNil(process.env.REACT_APP_NFT_STORAGE_API_KEY)) {
+    if (!_.isNil(process.env.GATSBY_NFT_STORAGE_API_KEY)) {
       nftstorage = new NFTStorage({
-        token: process.env.REACT_APP_NFT_STORAGE_API_KEY,
+        token: process.env.GATSBY_NFT_STORAGE_API_KEY,
       })
     }
 
