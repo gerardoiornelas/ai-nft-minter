@@ -3,7 +3,7 @@ const hre = require("hardhat")
 async function main() {
   const NAME = "AI Generated NFT by Gerardo I. Ornelas"
   const SYMBOL = "GIONFT"
-  const COST = ethers.utils.parseUnits("0.01", "ether") // 1 ETH
+  const COST = ethers.utils.parseUnits("1", "ether") // 1 ETH
 
   const NFT = await hre.ethers.getContractFactory("GioNFT")
   const nft = await NFT.deploy(NAME, SYMBOL, COST)

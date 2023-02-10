@@ -5,9 +5,10 @@ const tokens = n => {
   return ethers.utils.parseUnits(n.toString(), "ether")
 }
 
+const ether = tokens
+
 describe("GioNFT", () => {
-  let deployer, minter
-  let nft
+  let accounts, deployer, minter, nft
 
   const NAME = "AI Generated NFT by Gerardo I. Ornelas"
   const SYMBOL = "GIONFT"
@@ -17,7 +18,9 @@ describe("GioNFT", () => {
 
   beforeEach(async () => {
     // Setup accounts
-    ;[deployer, minter] = await ethers.getSigners()
+    accounts = await ethers.getSigners()
+    deployer = accounts[0]
+    minter = accounts[1]
 
     // Deploy Real Estate
     const NFT = await ethers.getContractFactory("GioNFT")
