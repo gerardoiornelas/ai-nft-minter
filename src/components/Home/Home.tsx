@@ -52,7 +52,7 @@ const AiNftMinter = () => {
 
     //load nft
     await loadNftContract(
-      "0xEaF52F2c273b460db83320f9A8E4C6498Ccc7465",
+      "0xEC20178c9B044621a0d1cfc229899d31434Bb908",
       gioNftAbi,
       provider,
       dispatch
